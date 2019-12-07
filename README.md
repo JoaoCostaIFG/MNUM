@@ -20,6 +20,7 @@ I believe that this part of the repository is the most important for the class.
 This part also contains the exercises solved so you can try them yourself.
 
 # Notes
+All the python code in this repository was written by me.  
 Remember to always submit some code, during the test, for all the question, even
 if the teacher doesn't ask for any (sometimes he'll grade with 0 in those questions
 if you don't do so).  
