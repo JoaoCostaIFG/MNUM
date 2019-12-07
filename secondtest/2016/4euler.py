@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 # Checked
+# I solver the version on the '2016.pdf', not the image files
+# (same test, different version => different question order and given values)
 
 Ta = 64
 

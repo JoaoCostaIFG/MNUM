@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 # Checked
+# I solver the version on the '2016.pdf', not the image files
+# (same test, different version => different question order and given values)
 
 ft = [1.02, 1.21, 1.45, 0.89, 0.62, 1.46, 0.74, 0.36, 0.87]
 ft2 = [1.02, 1.45, 0.62, 0.74, 0.87]

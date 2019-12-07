@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 # Checked
+# I solver the version on the '2016.pdf', not the image files
+# (same test, different version => different question order and given values)
 
 A = [[6, 0.5, 3, 0.25], [1.2, 3, 0.25, 0.2],
      [-1, 0.25, 4, 2], [2, 4, 1, 8]]
