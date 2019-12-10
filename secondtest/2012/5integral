@@ -1,0 +1,5 @@
+# CHECKED
+
+Comparing the difference between 2 steps (fragment a) is less precise than comparing the step directly (fragment b) because we can accumulate errors: truncation, sum of very small numbers with our very large accumulated one (or vice-versa), etc...
+
+This can lead (and most likely will) to a different number of iteration on the code fragments, a and b.
