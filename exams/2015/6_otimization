@@ -1,0 +1,5 @@
+1) Método do Gradiente
+
+2) Aproximacão muito rapidamente do mínimo
+
+3) Quando esta a ficar proximo do minimo, o gradiente aproxima-se de 0 (abranda a convergencia do metodo). Para ultrapassar esta dificuldade passamos a usar o método da quadrática (quando próximos do minimo).

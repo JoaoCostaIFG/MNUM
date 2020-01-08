@@ -1,0 +1,24 @@
+// Solved in maxima
+// Note: For the picard-peano method to converge in an interval, the absolute value of its derivative, g'(x), needs to be less than 1:
+// |g'(x)| < 1
+
+
+// a)
+eqa: 1/2 * sqrt(exp(x));
+plot2d(diff(eqa, x), [x, -1, 5], [y, -1, 1]);
+
+We can observe that the graph is only drawn from -1 to ~2.8 so it converges for the intervals X1 and X2
+
+
+// b)
+eqb: (exp(x)) / (4 * x);
+plot2d(diff(eqb, x), [x, -1, 5], [y, -1, 1]);
+
+We can observe that the graph isn't fully drawn for any of the 3 given intervals.
+
+
+// c)
+eqc: -1/2 * sqrt(exp(x));
+plot2d(diff(eqc, x), [x, -1, 5], [y, -1, 1]);
+
+We can observe that the graph is, once again, only drawn from -1 to ~2.8 so it converges for the intervals X1 and X2.
