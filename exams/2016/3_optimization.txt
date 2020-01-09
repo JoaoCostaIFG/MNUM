@@ -1,0 +1,9 @@
+1)
+We'll use the Levenberg-Marquardt method.
+
+2)
+This method is a combination of the Gradient-descent method and the Gauss-Newton method. The gradient descent dominates the steps until a canyon is reached and Gauss-Newton dominates the steps in a canyon. This given LM method the advantage of converging quickly in canyons (thanks to the Gauss-Newton mathod) and decreasing cost quickly for a given change in parameter values (thanks to the Gradient-descent method).
+
+3)
+Choosing a good alpha (damping parameter): if a step is unsuccessful, alpha should be increased until and acceptable step is found; when a step is accepted, we want to increase our step size by decreasing alpha.
+We also need to choose the method for updating alpha: although not the best, the delayed gratification method is a good improvement over the direct method and relatively simple to implement: we increase alpha by a small fixed factor for uphill steps and decrease alpha by a larger fixed factor for downhill steps.
