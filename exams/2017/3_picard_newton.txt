@@ -1,0 +1,36 @@
+1)
+Solved in maxima
+
+eq:%e ^ x - x - 5;
+plot2d(eq, [x, -10, 0]);
+
+By ploting the equation we can see it has a root in the interval (-6, -4)
+
+plot2d(eq, [x, 0, 5]);
+If we plot in a different range, we can see the graph as another root in the inter (1, 2)
+
+
+2)
+Solved in maxima
+
+eq1: %e ^ x - 5;
+eq2: log(5 + x);
+
+Formula 1:
+plot2d(diff(eq1, x), [x, -6, -4], [y, -1, 1]);
+plot2d(diff(eq1, x), [x, 1, 2], [y, -1, 1]);
+
+The graph is only drawn for the (-6, -4) interval, so the 1st formula only converges for the negative root.
+
+Formula 2:
+plot2d(diff(eq2), [x, -6, -4], [y, -1, 1]);
+plot2d(diff(eq2), [x, 1, 2], [y, -1, 1]);
+
+The graph is only drawn for the (1, 2) interval, so the 2nd formula only converges for the positive root.
+
+
+3)
+(Check the code for both of the methods)
+The other method we'll consider is the Newton's method.
+We'll use the same inicial guess (1) and max error (0.01) for both and see which converges faster to the positive root.
+We can see that the Newton's method stabilzies first (less iterations).
