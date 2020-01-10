@@ -1,0 +1,21 @@
+1)
+Solve in maxima.
+
+intervals:
+X1 = [-1, 0]
+X2 = [0, 1]
+X3 = [4, 5]
+
+picard equations:
+eq1: 1/2 * sqrt(exp(x));
+eq2: exp(x) / (4 * x);
+eq3: -1/2 * sqrt(exp(x));
+
+plot2d(diff(eq1, x), [x, -1, 5], [y, -1, 1]);
+eq1 only converges for the X1 and X2 intervals.
+
+plot2d(diff(eq2, x), [x, -1, 5], [y, -1, 1]);
+eq2 doesn't converge for all points in any of the given intervals.
+
+plot2d(diff(eq3, x), [x, -1, 5], [y, -1, 1]);
+eq3 only converges for the X1 and X2 intervals.

@@ -1,0 +1,27 @@
+Both X and i are integers,
+Xn+1 = Xn + i
+
+There are no precision errors related to floating point operations (result is always an integer).
+Since i is an integer, the smallest step we have access to is 1, which might be problematic in situations where we need a smaller step (e.g.: problems where the QC we obtain is greater than the desired one for the method used). We're also very restricted on which steps we can take.
+
+
+Both X and h are floats,
+Xn+1 = Xn + h
+
+With this iterator we're not restricted on the size of the steps we can take.
+We're doing quick floating point operations on top of previous one (we use the precious result to obtain the new one) so the precision errors will accumulate which is problematic in calculations with many steps.
+
+
+X, X0 and h are floats, and i is an integer
+Xn+1 = X0 + h * i
+
+This iterator is very similar to the previous one but it has a notable advantage and a notable disadvantage:
+It is preforms a slower floating point operation (doesn't use the previous result);
+It minimizes floating point precision errors by recalculating the whole step need and by using the base value of X, X0, every iteration.
+
+
+X is a float and m is an integer
+Xn+1 = Xn + 1/(2^m)
+
+This iterator preforms the most efficient floating point operation possible: 1/(2^m) corresponds to setting a single bit of the IEEE floating point standard mantissa. The sum of this value (a simple and 100% precise float) with another float doesn't incur any more precision errors than the value Xn would already have.
+The only problems with this iterator are: limiting the size of the steps we can take and still not solving the truncation errors problem.
