@@ -1,0 +1,6 @@
+I'd the use the Simpson's method because it is effective and well studied.
+
+I'd calculate the QC after each iteration and decide if something should be done based on its value. We know that, for the Simpson's method, the QC should be 16 so, if the QC was greater than 16, I'd decrease the integration step I was using and, if the QC was less than 16, I'd increase the integration step. On the other hand, if the QC was around 16, I'd keep going without changing the integration step.
+It should be noted that, in order to check the QC after each iteration, we would need to repeat the operations done using a step 2 times smaller and one 4 times smaller.
+
+The process ends when, at the end of an iteration, the error we got is within the desired values: the estimated error associated with a run of the Simpson's maethod is given by (s'' - s') / (2^order - 1), where s'' and s' are the results obtained by using the h/4 and h/2 steps (given h as the base step), respectively, and the order is the order of the method used (4 for the Simpson's method).
