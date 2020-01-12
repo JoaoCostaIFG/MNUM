@@ -1,0 +1,10 @@
+a)
+The beginning of the question is missing from the files I have so I can't answer this question with 100% certainty.
+This question alludes at there being 2 forms of the same system/matrix (maybe changing the order of the lines). The answer should be related to which form passes the convergence test for the Gauss-Seidel method: the absolute value of on the main row of each lines should be greater than the sum of the absolute values of all other elements.
+
+b)
+Once again, I can't answer this question with 100% certainty for the same reasons as the previous one.
+The answer to this question should be related with the partial pivoting technique for the Gauss elimination method: we do the elimination using the variable that has the highest coefficient for each column instead of the first one that's different of 0.
+
+c)
+I don't know which system we're trying to solve so I can't do this one.

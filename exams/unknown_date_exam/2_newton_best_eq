@@ -1,0 +1,40 @@
+In maxima:
+f1: x^m - R;
+f2: 1 - R/(x^m);
+
+// these are the final expression in newton form
+ratsimp(x - f1/diff(f1,x));
+ratsimp(x - f2/diff(f2,x));
+
+// c denotes a constant value
+Although the second expression seems more complicated, it actually does less calculations than the first one:
+first eq:
+            m + 1
+(m - 1) * x      + R * x
+-------------------------
+              m
+        m * x
+becomes:
+      c
+c * x   + c x
+--------------------
+            c
+      c * x
+We have 7 operations each iteration.
+
+second eq:
+    m + 1
+  x      + ((- R * m) - R) * x
+- -----------------------------
+          R * m
+becomes:
+   c
+ x   + c * x
+--------------
+      c
+an then:
+  c
+x   / c + x
+We have 3 operations each iteration.
+
+This confirms that the second equation is better for use with Newton's method.
